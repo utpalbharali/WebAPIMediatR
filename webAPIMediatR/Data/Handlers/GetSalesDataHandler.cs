@@ -3,7 +3,7 @@ using webAPIMediatR.Models;
 
 namespace webAPIMediatR.Data.Handlers
 {
-	public class GetSalesDataHandler : IRequestHandler<GetSalesDataQuery, List<SalesData>
+	public class GetSalesDataHandler : IRequestHandler<GetSalesDataQuery, List<SalesData> 
 	{
 	}
 }
