@@ -4,10 +4,13 @@ using webAPIMediatR.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using webAPIMediatR.Services;
+using Microsoft.Identity.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+ 
 
 
 builder.Services.AddDbContext<DataContext>(options =>

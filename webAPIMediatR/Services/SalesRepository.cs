@@ -13,7 +13,13 @@ namespace webAPIMediatR.Services
 		{
 			_dbContext = dbContext;				
 		}
-		public async Task<SalesData> AddSalesDataAsync(SalesData sales)
+
+        public SalesRepository(int i)
+        {
+            
+        }
+
+        public async Task<SalesData> AddSalesDataAsync(SalesData sales)
 		{
 			var result = _dbContext.Sales.Add(sales);
 			await _dbContext.SaveChangesAsync();
